@@ -1,4 +1,4 @@
-import ButtonComp from "./Button/ButtonComp";
+import ButtonComp from "./FrontPage/FrontPage";
 
 
 function App() {

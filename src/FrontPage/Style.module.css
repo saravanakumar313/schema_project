@@ -19,12 +19,12 @@
     left: 0;
     height: 100%;
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
-    backdrop-filter: blur(5px); /* Adjust blur strength */
+    background-color: rgba(0, 0, 0, 0.5); 
+    backdrop-filter: blur(5px); 
     opacity: 0;
     visibility: hidden;
     transition: opacity 0.5s ease, visibility 0.5s ease;
-    z-index: 100; /* Place it above other content but below the popup */
+    z-index: 100; 
 }
 
 .overlay.show {
@@ -37,7 +37,7 @@
     top: 0;
     right: 0;
     height: 100%;
-    width: 600px; /* Adjust width as needed */
+    width: 600px; 
     background-color: white;
     box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
     opacity: 0;
@@ -56,8 +56,8 @@
 .popupContent {
     padding: 20px;
     flex-grow: 1;
-    overflow-y: auto;  /* Enables scrolling within the content */
-    max-height: calc(100% - 60px);  /* Adjust based on the height of the footer */
+    overflow-y: auto;  
+    max-height: calc(100% - 60px);  
 }
 
 .closeButton {
@@ -94,10 +94,10 @@
 
 .traitsContainer {
     display: flex;
-    justify-content: flex-end;  /* Align items to the right */
+    justify-content: flex-end; 
     margin-top: 10px;
     margin-bottom: 20px;
-    width: 100%; /* Ensure it takes up the full width of the parent */
+    width: 100%; 
 }
 
 .traitLabel {
@@ -125,7 +125,7 @@
 
 
 .blueBox {
-    border:2px solid #5ea9f9; /* Blue background */
+    border:2px solid #5ea9f9; 
     padding: 0px 20px 20px 20px;
     border-radius: 8px;
     margin-top: 20px;
@@ -170,13 +170,13 @@
 }
 
 .addSchemaText {
-    color: rgb(81, 212, 81); /* Change this to the color you prefer */
+    color: rgb(81, 212, 81); 
     text-decoration: underline;
     cursor: pointer;
-    font-size: 14px; /* Adjust font size as needed */
+    font-size: 14px; 
 }
 .addSchemaText:hover {
-    text-decoration: none; /* Optional: Remove underline on hover */
+    text-decoration: none; 
 }
 
 .addedSchemas {
@@ -191,11 +191,11 @@
     padding: 10px 0;
     border-top: 1px solid #ddd;
     margin-top: 300px;
-    background-color: white;  /* Ensure it has the same background as the popup */
-    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);  /* Optional: Adds shadow to the footer */
+    background-color: white;  
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);  
     position: sticky;
     bottom: 0;
-    width: 100%;  /* Ensure footer takes up full width */
+    width: 100%;  
 }
 
 .cancelButton, .saveButton {
@@ -212,10 +212,10 @@
 }
 
 .saveButton {
-    background-color: #4CAF50;  /* Green color for save button */
+    background-color: #4CAF50; 
     color: white;
 }
 
 .cancelButton:hover, .saveButton:hover {
-    opacity: 0.8;  /* Optional: add hover effect */
+    opacity: 0.8;  
 }
