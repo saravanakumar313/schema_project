@@ -1,0 +1,221 @@
+.button{
+    background-color: transparent;
+    margin: 40px ;
+    font-size: 1.5em;
+    padding: 10px;
+    color: hsl(0, 2%, 62%);
+    border: 3px solid hsl(0, 2%, 62%);
+    cursor: pointer;
+}
+
+.button:hover{
+    background-color: hsla(0, 0%, 84%, 0.633);
+}
+
+/* Popup.module.css */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
+    backdrop-filter: blur(5px); /* Adjust blur strength */
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s ease, visibility 0.5s ease;
+    z-index: 100; /* Place it above other content but below the popup */
+}
+
+.overlay.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+.popupContainer {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 600px; /* Adjust width as needed */
+    background-color: white;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s ease, visibility 0.5s ease;
+    display: flex;
+    flex-direction: column;
+    z-index: 101;
+}
+
+.popupContainer.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+.popupContent {
+    padding: 20px;
+    flex-grow: 1;
+    overflow-y: auto;  /* Enables scrolling within the content */
+    max-height: calc(100% - 60px);  /* Adjust based on the height of the footer */
+}
+
+.closeButton {
+    align-self: flex-end;
+    font-size: 20px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.label {
+    display: block;
+    font-weight: 500;
+    margin-top: 10px;
+}
+
+.input {
+    width: 80%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 2px solid #ccc;
+}
+
+.schemaContainer {
+    margin-top: 15px;
+}
+
+.dropdown {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.traitsContainer {
+    display: flex;
+    justify-content: flex-end;  /* Align items to the right */
+    margin-top: 10px;
+    margin-bottom: 20px;
+    width: 100%; /* Ensure it takes up the full width of the parent */
+}
+
+.traitLabel {
+    font-size: 14px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+
+.greenBullet {
+    width: 10px;
+    height: 10px;
+    background-color: green;
+    border-radius: 50%;
+    margin-right: 8px;
+}
+
+.redBullet {
+    width: 10px;
+    height: 10px;
+    background-color: red;
+    border-radius: 50%;
+    margin-right: 8px;
+}
+
+
+.blueBox {
+    border:2px solid #5ea9f9; /* Blue background */
+    padding: 0px 20px 20px 20px;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+.addedSchemas {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.schemaItem {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.bullet {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin-right: 8px;
+}
+
+.greenBullet {
+    background-color: green;
+}
+
+.redBullet {
+    background-color: red;
+}
+
+
+.removeButton {
+    margin-left: 10px;
+    padding: 5px 10px;
+    background-color: rgb(146, 208, 249);
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.addSchemaText {
+    color: rgb(81, 212, 81); /* Change this to the color you prefer */
+    text-decoration: underline;
+    cursor: pointer;
+    font-size: 14px; /* Adjust font size as needed */
+}
+.addSchemaText:hover {
+    text-decoration: none; /* Optional: Remove underline on hover */
+}
+
+.addedSchemas {
+    margin-top: 15px;
+}
+
+
+.popupFooter {
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px;
+    padding: 10px 0;
+    border-top: 1px solid #ddd;
+    margin-top: 300px;
+    background-color: white;  /* Ensure it has the same background as the popup */
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);  /* Optional: Adds shadow to the footer */
+    position: sticky;
+    bottom: 0;
+    width: 100%;  /* Ensure footer takes up full width */
+}
+
+.cancelButton, .saveButton {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+}
+
+.cancelButton {
+    background-color: #f1f1f1;
+    color: #333;
+}
+
+.saveButton {
+    background-color: #4CAF50;  /* Green color for save button */
+    color: white;
+}
+
+.cancelButton:hover, .saveButton:hover {
+    opacity: 0.8;  /* Optional: add hover effect */
+}
